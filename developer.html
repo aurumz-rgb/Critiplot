@@ -21,6 +21,7 @@
     }
     main {
       padding: 2rem;
+      display: none; /* hidden until password is correct */
     }
     h1, h2 {
       margin: 0.5rem 0;
@@ -90,7 +91,7 @@
   <p>Global visitor stats powered by Firebase Firestore</p>
 </header>
 
-<main>
+<main id="dashboard">
   <div class="stats">
     <div class="stat-box">
       <h2 id="totalVisits">0</h2>
@@ -106,7 +107,6 @@
     </div>
   </div>
 
-  <button id="resetBtn">Reset Logs</button>
 
   <h2>All Visitor Logs</h2>
   <table>
@@ -131,6 +131,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="module">
+  const PASSWORD = "https://nos-tlplot.vercel.app"; 
+  const entered = prompt("Enter password to access developer dashboard:");
+  if(entered !== PASSWORD){
+    alert("Incorrect password. Access denied.");
+    document.body.innerHTML = "<h1 style='text-align:center;margin-top:50px;color:red;'>Access Denied</h1>";
+    throw new Error("Access denied");
+  } else {
+    document.getElementById("dashboard").style.display = "block";
+  }
+
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
   import { getFirestore, collection, getDocs, deleteDoc, doc, query, orderBy } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 
@@ -188,7 +198,6 @@
     uniqueIPsEl.textContent = uniqueIPs.size;
     lastVisitEl.textContent = logsSnapshot.size ? new Date(logsSnapshot.docs[0].data().timestamp).toLocaleString() : "-";
 
-    // Render line chart
     if(countryChart) countryChart.destroy();
     countryChart = new Chart(ctx, {
       type: "line",
@@ -217,17 +226,7 @@
     });
   }
 
-  resetBtn.addEventListener("click", async () => {
-    if(confirm("Are you sure you want to delete all logs? This cannot be undone.")) {
-      const logsCol = collection(db, "logs");
-      const logsSnapshot = await getDocs(logsCol);
-      for(const logDoc of logsSnapshot.docs) {
-        await deleteDoc(doc(db, "logs", logDoc.id));
-      }
-      fetchLogs();
-      alert("All logs deleted.");
-    }
-  });
+
 
   fetchLogs();
 </script>
