@@ -1,9 +1,9 @@
-# Front-end for the NOSPlot.
+# Front-end for the NOS-Plot.
 
 ---
 
 
-🔗 **Interactive web app:** [nosplot.vercel.app](https://nosplot.vercel.app)
+🔗 **Interactive web app:** [nos-plot.vercel.app](https://nos-plot.vercel.app)
 
 📂 **Code & archive (Zenodo DOI):** [10.5281/zenodo.17065215](https://doi.org/10.5281/zenodo.17065215)
 
