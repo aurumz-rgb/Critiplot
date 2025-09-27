@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOSPlot Developer Stats</title>
+  <title>NOS-Plot Developer Stats</title>
   <link rel="icon" href="assets/icon.png" type="image/png">
   <style>
     body {
@@ -21,7 +21,7 @@
     }
     main {
       padding: 2rem;
-      display: none; /* hidden until password is correct */
+      display: none; 
     }
     h1, h2 {
       margin: 0.5rem 0;
@@ -87,7 +87,7 @@
 <body>
 
 <header>
-  <h1>NOSPlot Developer Dashboard</h1>
+  <h1>NOS-Plot Developer Dashboard</h1>
   <p>Global visitor stats powered by Firebase Firestore</p>
 </header>
 
@@ -131,7 +131,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script type="module">
-  const PASSWORD = "https://nosplot.vercel.app"; 
+  const PASSWORD = "https://nos-plot.vercel.app"; 
   const entered = prompt("Enter password to access developer dashboard:");
   if(entered !== PASSWORD){
     alert("Incorrect password. Access denied.");
