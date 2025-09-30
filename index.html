@@ -1,69 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
  <meta name="google-site-verification" content="UtQa3kQbka9YHVvT5NL7Fy12ZPbGFpsFJZJ9hQ48Lmc" />
  
   <!-- Basic SEO -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NOS-Plot</title>
-  <meta name="description" content="NOS-Plot is a free, open-source visualization tool for generating Newcastle–Ottawa Scale (NOS) traffic light plots and risk of bias graphics. Ideal for meta-analysis, systematic reviews, and evidence synthesis.">
-  <meta name="keywords" content="NOS, Newcastle–Ottawa Scale, traffic light plot, meta-analysis, risk of bias, bias visualization, systematic review, evidence synthesis, open-source visualization tool, publication-ready plots, reproducible research, Vihaan Sahu">
+  <title>Critiplot</title>
+  <meta name="description" content="Critiplot is a free, open-source visualization tool for generating risk of bias assessments including NOS, GRADE, ROBIS, and JBI. Ideal for meta-analysis, systematic reviews, and evidence synthesis.">
+  <meta name="keywords" content="Critiplot, NOS, Newcastle–Ottawa Scale, GRADE, ROBIS, JBI, traffic light plot, meta-analysis, risk of bias, bias visualization, systematic review, evidence synthesis, open-source visualization tool, publication-ready plots, reproducible research, Vihaan Sahu">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="author" content="Vihaan Sahu">
-  <meta name="copyright" content="© 2025 NOS-Plot Project">
+  <meta name="copyright" content="© 2025 Critiplot Project">
   <meta name="language" content="en">
-  <link rel="canonical" href="https://nos-plot.vercel.app/">
+  <link rel="canonical" href="https://critiplot.vercel.app/">
   <link rel="icon" href="assets/icon.png" type="image/png">
   <meta name="theme-color" content="#2c3e50">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="NOS-Plot | Risk of Bias & NOS Visualization">
-  <meta property="og:description" content="Generate professional traffic light plots and bias visualizations using the Newcastle–Ottawa Scale (NOS) for meta-analysis and systematic reviews.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/NOS-visualiser/main/assets/preview.png">
-  <meta property="og:image:alt" content="NOS-Plot risk of bias traffic light plot example">
-  <meta property="og:url" content="https://nos-plot.vercel.app/">
-  <meta property="og:site_name" content="NOS-Plot">
+  <meta property="og:title" content="Critiplot | Risk of Bias Visualization Tool">
+  <meta property="og:description" content="Generate professional traffic light plots and bias visualizations using multiple assessment tools including NOS, GRADE, ROBIS, and JBI for meta-analysis and systematic reviews.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/assets/preview1.png">
+  <meta property="og:image:alt" content="Critiplot risk of bias traffic light plot example">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result1.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/nos_result.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/nos_result2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result1.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result3.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result1.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result3.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result4.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result5.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report1.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report3.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report4.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot1.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot2.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot4.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot5.png">
+  <meta property="og:url" content="https://critiplot.vercel.app/">
+  <meta property="og:site_name" content="Critiplot">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="NOS-Plot | Risk of Bias Visualization for Meta-Analysis">
-  <meta name="twitter:description" content="Open-source tool for generating Newcastle–Ottawa Scale (NOS) traffic light plots and risk of bias visualizations.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/aurumz-rgb/NOS-visualiser/main/assets/preview.png">
+  <meta name="twitter:title" content="Critiplot | Risk of Bias Visualization for Meta-Analysis">
+  <meta name="twitter:description" content="Open-source tool for generating risk of bias visualizations using multiple assessment tools including NOS, GRADE, ROBIS, and JBI.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/assets/preview1.png">
   <meta name="twitter:image:alt" content="Traffic light plot visualization example">
   <meta name="twitter:creator" content="@Vihaan">
 
   <!-- Google Scholar & Academic Discovery -->
-  <meta name="citation_title" content="NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis">
+  <meta name="citation_title" content="Critiplot: Visualization Tool for Risk of Bias Assessments">
   <meta name="citation_author" content="Vihaan Sahu">
   <meta name="citation_publication_date" content="2025">
   <meta name="citation_doi" content="10.5281/zenodo.17065215">
-  <meta name="citation_pdf_url" content="https://zenodo.org/record/17065215/files/nos-plot.pdf">
+  <meta name="citation_pdf_url" content="https://zenodo.org/record/17065215/files/critiplot.pdf">
 
   <!-- Enhanced JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "NOS-Plot",
-    "alternateName": "Newcastle–Ottawa Scale Traffic Light Plot Generator",
+    "name": "Critiplot",
+    "alternateName": "Critical Appraisal Plot Visualiser for Risk of Bias Assessments",
     "operatingSystem": "Web",
     "applicationCategory": "Visualization Tool",
-    "description": "An open-source tool to generate Newcastle–Ottawa Scale (NOS) traffic light plots and risk of bias visualizations for meta-analysis and evidence synthesis.",
-    "url": "https://nos-plot.vercel.app/",
-    "image": "https://nos-plot.vercel.app/assets/preview.png",
+    "description": "An open-source tool to generate risk of bias visualizations for multiple assessment tools including NOS, GRADE, ROBIS, and JBI for meta-analysis and evidence synthesis.",
+    "url": "https://critiplot.vercel.app/",
+    "image": [
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/assets/preview1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/result2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/nos_result.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/nos_result2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/grade_result3.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result3.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result4.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/robis_result5.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report3.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/case_report4.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot1.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot2.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot4.png",
+      "https://raw.githubusercontent.com/aurumz-rgb/Critiplot-main/example/series_plot5.png"
+    ],
     "creator": {
       "@type": "Person",
       "name": "Vihaan Sahu",
-      "affiliation": "NOS-Plot Project"
+      "affiliation": "Critiplot Project"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "NOS-Plot Project",
-      "url": "https://nos-plot.vercel.app/"
+      "name": "Critiplot Project",
+      "url": "https://critiplot.vercel.app/"
     },
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
     "sameAs": [
-      "https://github.com/aurumz-rgb/nos-plot",
+      "https://github.com/aurumz-rgb/Critiplot-main",
       "https://doi.org/10.5281/zenodo.17065215"
     ]
   }
@@ -136,10 +186,6 @@
 
 </script>
 
-</body>
-</html>
-
-
   <style>
     body {
       margin: 0;
@@ -192,20 +238,51 @@
     .carousel {
       position: relative;
       width: 100%;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 2rem auto;
       overflow: hidden;
       border-radius: 8px;
+      background: #ffffff; /* Changed from grey to white */
     }
     .carousel-track {
       display: flex;
-      width: 300%;
-      transition: transform 1.8s ease-in-out;
+      width: 2400%; /* 24 images * 100% */
+      transition: transform 0.5s ease-in-out;
     }
     .carousel-track img {
-      width: 33.3333%;
+      width: 4.166666%; /* 100% / 24 images */
       flex-shrink: 0;
       display: block;
+      height: auto;
+      object-fit: contain;
+    }
+    
+    /* Carousel navigation arrows */
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 20px;
+      border: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .carousel-arrow:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .carousel-arrow.prev {
+      left: 10px;
+    }
+    .carousel-arrow.next {
+      right: 10px;
     }
 
     /* Table styles */
@@ -287,58 +364,212 @@
   color: #5dade2;
 }
 
+    /* Data Templates Styles */
+    .template-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .template-box {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+      width: 160px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .template-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .template-box h3 {
+      margin-top: 0;
+      color: #2c3e50;
+      font-size: 1.1rem;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    
+    .template-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      justify-content: center;
+    }
+    
+    .template-buttons a {
+      background: #3498db;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: background 0.2s ease;
+    }
+    
+    .template-buttons a:hover {
+      background: #2980b9;
+    }
+
+    /* Citation download buttons */
+    .citation-download {
+      margin-top: 1rem;
+      display: flex;
+      gap: 10px;
+    }
+    .citation-download button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background 0.2s ease;
+    }
+    .citation-download button:hover {
+      background: #2980b9;
+    }
+
   </style>
 </head>
 <body>
 
 <header>
-  <img src="assets/logo.png" alt="NOS-Plot Logo" height="160">
-  <h1>NOS-Plot.</h1>
-  <p>Professional Risk-of-Bias Visualization for Newcastle–Ottawa Scale (NOS)</p>
+  <img src="assets/logo.png" alt="Critiplot Logo" height="160">
+  <h1>Critiplot.</h1>
+  <p>A Critical Appraisal Plot Visualiser for Risk of Bias Assessments</p>
 </header>
 
 <main>
   <div class="container">
 
     <section>
-      <h2>About NOS-Plot</h2>
+      <h2>About Critiplot</h2>
       <p>
-        <em>NOS-Plot</em> is a reproducible web tool for visualizing <em>Newcastle–Ottawa Scale (NOS) risk-of-bias assessments</em>.<br>
-        It helps researchers generate traffic light plots for study-level judgments and weighted bar plots summarizing overall distributions.<br>
-        Built on Python, it complements evidence synthesis workflows while ensuring reproducibility and consistent visualization of your datasets.<br>
-        Inspired by the <em>Evidence Synthesis Hackathon</em> philosophy, NOS-Plot emphasizes open, reproducible, and publication-ready graphics.<br><br>
-        Key features of NOS-Plot include:
+        <em>Critiplot</em> is a comprehensive web tool for visualizing <em>multiple risk-of-bias assessment tools</em>.<br>
+        It helps researchers generate traffic light plots and weighted bar plots for various assessment methodologies including NOS, GRADE, ROBIS, and JBI tools.<br>
+        Built on Python, it complements evidence synthesis workflows while ensuring reproducibility and consistent visualization of your datasets.<br><br>
+        Critiplot supports the following assessment tools:
+      </p>
+      <ul>
+        <li><strong>NOS (Newcastle-Ottawa Scale)</strong> - For assessing the quality of non-randomized studies</li>
+        <li><strong>GRADE</strong> - For rating the certainty of evidence in systematic reviews</li>
+        <li><strong>ROBIS</strong> - For assessing risk of bias in systematic reviews</li>
+        <li><strong>JBI Case Report</strong> - For critical appraisal of case reports</li>
+        <li><strong>JBI Case Series</strong> - For critical appraisal of case series</li>
+      </ul>
+      <p>
+        Key features of Critiplot include:
       </p>
       <ul>
         <li>Generation of intuitive traffic light plots for each study's risk-of-bias assessment.</li>
         <li>Weighted bar plots to summarize overall domain-level distributions across studies.</li>
-        <li>Seamless integration with Python for reproducible workflows.</li>
+        <li>Multiple visualization themes for each assessment tool.</li>
         <li>Publication-ready visualizations suitable for manuscripts, presentations, and reports.</li>
         <li>Open-source design to facilitate reproducibility and transparency in evidence synthesis.</li>
       </ul>
       <p>
-        With NOS-Plot, researchers can quickly interpret and communicate study-level risk-of-bias information, ensuring both clarity and scientific rigor.
+        With Critiplot, researchers can quickly interpret and communicate study-level risk-of-bias information across multiple assessment frameworks, ensuring both clarity and scientific rigor.
       </p>
     </section>
 
-
     <!-- Carousel Section -->
     <section class="carousel">
+      <button class="carousel-arrow prev">&#10094;</button>
       <div class="carousel-track">
         <img src="example/result.png" alt="Result 1">
         <img src="example/result1.png" alt="Result 2">
         <img src="example/result2.png" alt="Result 3">
+        <img src="example/nos_result.png" alt="NOS Result">
+        <img src="example/nos_result2.png" alt="NOS Result 2">
+        <img src="example/grade_result1.png" alt="GRADE Result 1">
+        <img src="example/grade_result2.png" alt="GRADE Result 2">
+        <img src="example/grade_result3.png" alt="GRADE Result 3">
+        <img src="example/robis_result1.png" alt="ROBIS Result 1">
+        <img src="example/robis_result2.png" alt="ROBIS Result 2">
+        <img src="example/robis_result3.png" alt="ROBIS Result 3">
+        <img src="example/robis_result4.png" alt="ROBIS Result 4">
+        <img src="example/robis_result5.png" alt="ROBIS Result 5">
+        <img src="example/case_report.png" alt="Case Report">
+        <img src="example/case_report1.png" alt="Case Report 1">
+        <img src="example/case_report2.png" alt="Case Report 2">
+        <img src="example/case_report3.png" alt="Case Report 3">
+        <img src="example/case_report4.png" alt="Case Report 4">
+        <img src="example/case_report.png" alt="Case Report">
+        <img src="example/series_plot.png" alt="Series Plot">
+        <img src="example/series_plot1.png" alt="Series Plot 1">
+        <img src="example/series_plot2.png" alt="Series Plot 2">
+        <img src="example/series_plot4.png" alt="Series Plot 4">
+        <img src="example/series_plot5.png" alt="Series Plot 5">
       </div>
+      <button class="carousel-arrow next">&#10095;</button>
     </section>
 
     <section class="redirect">
-      <a href="https://nos-plot.fly.dev" target="_blank">🚀 Launch NOS-Plot</a>
+      <a href="https://critiplot.fly.dev" target="_blank">🚀 Launch Critiplot</a>
     </section>
 
     <!-- Table instructions -->
     <section class="table-instructions">
-      <h2>Table Structure</h2>
-      <p>To work correctly with NOS-Plot, your uploaded table should follow this structure:</p>
+      <h2>Data Structure for Assessment Tools</h2>
+      
+      <!-- Data Templates Section as a subtitle -->
+      <h3>Data Templates</h3>
+      <p>Download ready-to-use templates for each assessment tool. Simply click to download the CSV or Excel format.</p>
+      
+      <div class="template-container">
+        <div class="template-box">
+          <h3>NOS</h3>
+          <div class="template-buttons">
+            <a href="nos_data.csv" download>CSV</a>
+            <a href="nos_data.xlsx" download>Excel</a>
+          </div>
+        </div>
+        
+        <div class="template-box">
+          <h3>GRADE</h3>
+          <div class="template-buttons">
+            <a href="grade_data.csv" download>CSV</a>
+            <a href="grade_data.xlsx" download>Excel</a>
+          </div>
+        </div>
+        
+        <div class="template-box">
+          <h3>ROBIS</h3>
+          <div class="template-buttons">
+            <a href="robis_data.csv" download>CSV</a>
+            <a href="robis_data.xlsx" download>Excel</a>
+          </div>
+        </div>
+        
+        <div class="template-box">
+          <h3>JBI Case Report</h3>
+          <div class="template-buttons">
+            <a href="case_report.csv" download>CSV</a>
+            <a href="case_report.xlsx" download>Excel</a>
+          </div>
+        </div>
+        
+        <div class="template-box">
+          <h3>JBI Case Series</h3>
+          <div class="template-buttons">
+            <a href="case_series.csv" download>CSV</a>
+            <a href="case_series.xlsx" download>Excel</a>
+          </div>
+        </div>
+      </div>
+      
+      <h3>NOS (Newcastle-Ottawa Scale)</h3>
+      <p>To work correctly with Critiplot for NOS assessments, your uploaded table should follow this structure:</p>
       <ul>
         <li><strong>First column:</strong> Study details (Author, Year)</li>
         <li><strong>Domain columns:</strong> Each additional column corresponds to a specific NOS domain:
@@ -358,7 +589,7 @@
         </li>
       </ul>
 
-      <!-- Embedded sample.csv table -->
+      <!-- Embedded NOS sample table -->
       <div class="table-container">
         <table>
           <thead>
@@ -406,61 +637,241 @@
               <td>7</td>
               <td>Moderate</td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h3>GRADE</h3>
+      <p>For GRADE assessments, your uploaded table should follow this structure:</p>
+      <ul>
+        <li><strong>Outcome:</strong> Name of the outcome</li>
+        <li><strong>Study:</strong> Study identifier</li>
+        <li><strong>Risk of Bias:</strong> Risk of bias judgement (High, Moderate, Low, Very Low, None)</li>
+        <li><strong>Inconsistency:</strong> Inconsistency judgement (High, Moderate, Low, Very Low, None)</li>
+        <li><strong>Indirectness:</strong> Indirectness judgement (High, Moderate, Low, Very Low, None)</li>
+        <li><strong>Imprecision:</strong> Imprecision judgement (High, Moderate, Low, Very Low, None)</li>
+        <li><strong>Publication Bias:</strong> Publication bias judgement (High, Moderate, Low, Very Low, None)</li>
+        <li><strong>Overall Certainty:</strong> Overall certainty judgement (High, Moderate, Low, Very Low)</li>
+      </ul>
+      
+      <!-- Embedded GRADE sample table -->
+      <div class="table-container">
+        <table>
+          <thead>
             <tr>
-              <td>Study 3, 2019</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>6</td>
+              <th>Outcome</th>
+              <th>Study</th>
+              <th>Risk of Bias</th>
+              <th>Inconsistency</th>
+              <th>Indirectness</th>
+              <th>Imprecision</th>
+              <th>Publication Bias</th>
+              <th>Overall Certainty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mortality</td>
+              <td>Study 1 2020</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Low</td>
               <td>Moderate</td>
+              <td>None</td>
+              <td>Low</td>
             </tr>
             <tr>
-              <td>Study 4, 2025</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-              <td>4</td>
+              <td>Infection</td>
+              <td>Study 2 2019</td>
+              <td>Moderate</td>
+              <td>High</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Moderate</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h3>ROBIS</h3>
+      <p>For ROBIS assessments, your uploaded table should follow this structure:</p>
+      <ul>
+        <li><strong>Review:</strong> Review identifier</li>
+        <li><strong>Study Eligibility:</strong> Risk of bias judgement (Low, Unclear, High)</li>
+        <li><strong>Identification & Selection:</strong> Risk of bias judgement (Low, Unclear, High)</li>
+        <li><strong>Data Collection:</strong> Risk of bias judgement (Low, Unclear, High)</li>
+        <li><strong>Synthesis & Findings:</strong> Risk of bias judgement (Low, Unclear, High)</li>
+        <li><strong>Overall Risk:</strong> Overall risk of bias judgement (Low, Unclear, High)</li>
+      </ul>
+      
+      <!-- Embedded ROBIS sample table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Review</th>
+              <th>Study Eligibility Criteria</th>
+              <th>Identification & Selection of Studies</th>
+              <th>Data Collection & Study Appraisal</th>
+              <th>Synthesis & Findings</th>
+              <th>Overall RoB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Study 1 2021</td>
+              <td>Low</td>
+              <td>High</td>
+              <td>Unclear</td>
+              <td>Low</td>
               <td>High</td>
             </tr>
             <tr>
-              <td>Study 5, 2025</td>
+              <td>Study 2 2020</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Low</td>
+              <td>Low</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h3>JBI Case Report</h3>
+      <p>For JBI Case Report assessments, your uploaded table should follow this structure:</p>
+      <ul>
+        <li><strong>Author,Year:</strong> Study identifier (e.g., "Smith, 2020")</li>
+        <li><strong>Demographics:</strong> Score (0 or 1)</li>
+        <li><strong>History:</strong> Score (0 or 1)</li>
+        <li><strong>ClinicalCondition:</strong> Score (0 or 1)</li>
+        <li><strong>Diagnostics:</strong> Score (0 or 1)</li>
+        <li><strong>Intervention:</strong> Score (0 or 1)</li>
+        <li><strong>PostCondition:</strong> Score (0 or 1)</li>
+        <li><strong>AdverseEvents:</strong> Score (0 or 1)</li>
+        <li><strong>Lessons:</strong> Score (0 or 1)</li>
+        <li><strong>Total:</strong> Sum of the domain scores</li>
+        <li><strong>Overall RoB:</strong> Overall risk of bias judgement (Low, High)</li>
+      </ul>
+      
+      <!-- Embedded JBI Case Report sample table -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Author,Year</th>
+              <th>Demographics</th>
+              <th>History</th>
+              <th>ClinicalCondition</th>
+              <th>Diagnostics</th>
+              <th>Intervention</th>
+              <th>PostCondition</th>
+              <th>AdverseEvents</th>
+              <th>Lessons</th>
+              <th>Total</th>
+              <th>Overall RoB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Study 1,2022</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>7</td>
+              <td>Low</td>
+            </tr>
+            <tr>
+              <td>Study 2,2021</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
               <td>1</td>
               <td>0</td>
               <td>0</td>
               <td>0</td>
-              <td>0</td>
               <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
               <td>3</td>
               <td>High</td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h3>JBI Case Series</h3>
+      <p>For JBI Case Series assessments, your uploaded table should follow this structure:</p>
+      <ul>
+        <li><strong>Author,Year:</strong> Study identifier (e.g., "Smith, 2020")</li>
+        <li><strong>InclusionCriteria:</strong> Score (0 or 1)</li>
+        <li><strong>StandardMeasurement:</strong> Score (0 or 1)</li>
+        <li><strong>ValidIdentification:</strong> Score (0 or 1)</li>
+        <li><strong>ConsecutiveInclusion:</strong> Score (0 or 1)</li>
+        <li><strong>CompleteInclusion:</strong> Score (0 or 1)</li>
+        <li><strong>Demographics:</strong> Score (0 or 1)</li>
+        <li><strong>ClinicalInfo:</strong> Score (0 or 1)</li>
+        <li><strong>Outcomes:</strong> Score (0 or 1)</li>
+        <li><strong>SiteDescription:</strong> Score (0 or 1)</li>
+        <li><strong>Statistics:</strong> Score (0 or 1)</li>
+        <li><strong>Total:</strong> Sum of the domain scores</li>
+        <li><strong>Overall RoB:</strong> Overall risk of bias judgement (Low, High)</li>
+      </ul>
+      
+      <!-- Embedded JBI Case Series sample table -->
+      <div class="table-container">
+        <table>
+          <thead>
             <tr>
-              <td>Study 6, 2019</td>
+              <th>Author,Year</th>
+              <th>InclusionCriteria</th>
+              <th>StandardMeasurement</th>
+              <th>ValidIdentification</th>
+              <th>ConsecutiveInclusion</th>
+              <th>CompleteInclusion</th>
+              <th>Demographics</th>
+              <th>ClinicalInfo</th>
+              <th>Outcomes</th>
+              <th>SiteDescription</th>
+              <th>Statistics</th>
+              <th>Total</th>
+              <th>Overall RoB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Study 1,2022</td>
               <td>1</td>
               <td>1</td>
               <td>1</td>
               <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>10</td>
+              <td>Low</td>
+            </tr>
+            <tr>
+              <td>Study 2,2021</td>
               <td>1</td>
               <td>0</td>
               <td>1</td>
               <td>1</td>
+              <td>0</td>
               <td>1</td>
-              <td>8</td>
-              <td>Low</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>5</td>
+              <td>High</td>
             </tr>
           </tbody>
         </table>
@@ -471,15 +882,15 @@
     <section class="support">
       <h2>Support & Contact</h2>
       <p>
-        Have questions or need assistance with NOS-Plot? This tool is designed for reproducible research, and we are here to help you integrate it into your workflow.<br><br>
-        You can <a href="https://github.com/aurumz-rgb/nos-plot/issues" target="_blank">open a GitHub Issue</a> or <a href="mailto:pteroisvolitans12@gmail.com">send an email</a> directly for guidance, troubleshooting, or feature requests.
+        Have questions or need assistance with Critiplot? This tool is designed for reproducible research, and we are here to help you integrate it into your workflow.<br><br>
+        You can <a href="https://github.com/aurumz-rgb/Critiplot-main/issues" target="_blank">open a GitHub Issue</a> or <a href="mailto:pteroisvolitans12@gmail.com">send an email</a> directly for guidance, troubleshooting, or feature requests.
       </p>
     </section>
 
     <!-- Citation Section -->
     <section class="citation">
       <h2>Citation</h2>
-      <p>If you use NOS-Plot to create risk-of-bias plots for your study, please remember to cite the tool.</p>
+      <p>If you use Critiplot to create risk-of-bias plots for your study, please remember to cite the tool.</p>
 
       <!-- New dropdown and copy button -->
       <div class="citation-select-container">
@@ -488,11 +899,19 @@
           <option value="vancouver">Vancouver</option>
           <option value="chicago">Chicago</option>
           <option value="harvard">Harvard</option>
+          <option value="mla">MLA</option>
+          <option value="ieee">IEEE</option>
         </select>
         <button onclick="copyCitation()">Copy</button>
       </div>
 
-      <p id="citationText"><em>Sahu, V. (2025). NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215</em></p>
+      <p id="citationText"><em>Sahu, V. (2025). Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215</em></p>
+      
+      <!-- Download citation buttons -->
+      <div class="citation-download">
+        <button onclick="downloadCitation('ris')">Download RIS</button>
+        <button onclick="downloadCitation('bibtex')">Download BibTeX</button>
+      </div>
     </section>
 
   </div>
@@ -500,10 +919,10 @@
 
 <footer>
   <div class="footer-left">
-    © 2025 Vihaan Sahu - Licensed under Apache 2.0
+    © 2025 Vihaan Sahu – Licensed under Apache 2.0
   </div>
   <div class="footer-center">
-    <a href="https://github.com/aurumz-rgb/nos-plot" target="_blank">GitHub Repository</a>
+    <a href="https://github.com/aurumz-rgb/Critiplot-main" target="_blank">GitHub Repository</a>
   </div>
   <div class="footer-right">
     <a href="developer.html" target="_self">Stats</a>
@@ -511,25 +930,36 @@
 </footer>
 
 <script>
-  // Smooth infinite carousel using JS
+  // Manual carousel navigation
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(track.children);
+  const prevButton = document.querySelector('.carousel-arrow.prev');
+  const nextButton = document.querySelector('.carousel-arrow.next');
+  
   let index = 0;
 
-  function moveCarousel() {
-    index++;
-    if(index >= slides.length) index = 0;
+  function moveCarousel(direction) {
+    if (direction === 'next') {
+      index++;
+      if (index >= slides.length) index = 0;
+    } else {
+      index--;
+      if (index < 0) index = slides.length - 1;
+    }
     track.style.transform = `translateX(-${index * (100 / slides.length)}%)`;
   }
 
-  setInterval(moveCarousel, 9000); 
+  prevButton.addEventListener('click', () => moveCarousel('prev'));
+  nextButton.addEventListener('click', () => moveCarousel('next'));
 
   // Citation logic
   const citations = {
-    apa: "Sahu, V. (2025). NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
-    vancouver: "Sahu V. NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis (v1.0.0). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17065215",
-    chicago: "Sahu, V. 2025. NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
-    harvard: "Sahu, V., 2025. NOS-Plot: Visualization Tool for Newcastle–Ottawa Scale in Meta-Analysis (v1.0.0). Zenodo. Available at: https://doi.org/10.5281/zenodo.17065215"
+    apa: "Sahu, V. (2025). Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
+    vancouver: "Sahu V. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17065215",
+    chicago: "Sahu, V. 2025. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
+    harvard: "Sahu, V., 2025. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. Available at: https://doi.org/10.5281/zenodo.17065215",
+    mla: "Sahu, Vihaan. \"Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17065215.",
+    ieee: "V. Sahu, \"Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0),\" Zenodo, 2025. doi: 10.5281/zenodo.17065215."
   };
 
   const citationSelect = document.getElementById("citationType");
@@ -544,6 +974,45 @@
     navigator.clipboard.writeText(citationText.innerText).then(() => {
       alert("Citation copied to clipboard!");
     });
+  }
+  
+  // Download citation in different formats
+  function downloadCitation(format) {
+    let content = "";
+    let filename = "critiplot_citation";
+    
+    if (format === 'ris') {
+      content = `TY  - COMP
+T1  - Critiplot: Visualization Tool for Risk of Bias Assessments
+A1  - Sahu, Vihaan
+Y1  - 2025
+DO  - https://doi.org/10.5281/zenodo.17065215
+PB  - Zenodo
+PY  - 2025
+ER  - `;
+      filename += ".ris";
+    } else if (format === 'bibtex') {
+      content = `@software{critiplot,
+  author = {Sahu, Vihaan},
+  title = {{Critiplot: Visualization Tool for Risk of Bias Assessments}},
+  year = {2025},
+  version = {v1.0.0},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.17065215},
+  url = {https://doi.org/10.5281/zenodo.17065215}
+}`;
+      filename += ".bib";
+    }
+    
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
 </script>
 

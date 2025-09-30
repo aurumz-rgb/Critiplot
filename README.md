@@ -1,15 +1,17 @@
-# Front-end for the NOS-Plot.
+# Front-end for the Critiplot.
 
 ---
 
 
-🔗 **Interactive web app:** [nos-plot.vercel.app](https://nos-plot.vercel.app)
+🔗 **Interactive web app:** [critiplot.vercel.app](https://critiplot.vercel.app)
 
 📂 **Code & archive (Zenodo DOI):** [10.5281/zenodo.17065215](https://doi.org/10.5281/zenodo.17065215)
 
 ---
 
-Please visit to get more Info & see Repo: https://github.com/aurumz-rgb/NOS-Plot-main
+Please visit to get more Info & see Repo: https://github.com/aurumz-rgb/Critiplot-main
 
 
-![Preview](assets/preview.png)
+![Preview](assets/preview1.png)
+
+
