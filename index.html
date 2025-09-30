@@ -58,11 +58,11 @@
   <meta name="twitter:creator" content="@Vihaan">
 
   <!-- Google Scholar & Academic Discovery -->
-  <meta name="citation_title" content="Critiplot: Visualization Tool for Risk of Bias Assessments">
+  <meta name="citation_title" content="Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses">
   <meta name="citation_author" content="Vihaan Sahu">
   <meta name="citation_publication_date" content="2025">
-  <meta name="citation_doi" content="10.5281/zenodo.17065215">
-  <meta name="citation_pdf_url" content="https://zenodo.org/record/17065215/files/critiplot.pdf">
+  <meta name="citation_doi" content="10.5281/zenodo.17236600">
+  <meta name="citation_pdf_url" content="https://zenodo.org/record/17236600/files/critiplot.pdf">
 
   <!-- Enhanced JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -114,7 +114,7 @@
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
     "sameAs": [
       "https://github.com/aurumz-rgb/Critiplot-main",
-      "https://doi.org/10.5281/zenodo.17065215"
+      "https://doi.org/10.5281/zenodo.17236600"
     ]
   }
   </script>
@@ -285,13 +285,13 @@
       right: 10px;
     }
 
-    /* Table styles */
+
     .table-container {
       overflow-x: auto;
       margin-top: 1rem;
     }
     table {
-      width: auto; /* smaller, just fit the csv */
+      width: auto; 
       border-collapse: collapse;
     }
     th, td {
@@ -305,7 +305,7 @@
       color: white;
     }
 
-    /* Citation and Support styling */
+
     .citation, .support, .table-instructions {
       margin-top: 2rem;
     }
@@ -324,11 +324,11 @@
 
     .citation-select-container select, 
     .citation-select-container button {
-       font-size: 0.8rem;        /* bigger text */
-       padding: 0.2rem 0.5rem;   /* taller box and wider click area */
+       font-size: 0.8rem;        
+       padding: 0.2rem 0.5rem;  
        margin-right: 0.5rem;
-       min-width: 180px;       /* make the dropdown wider */
-       border-radius: 6px;     /* optional rounded corners */
+       min-width: 180px;       
+       border-radius: 6px;     
        
 }
 
@@ -905,7 +905,7 @@
         <button onclick="copyCitation()">Copy</button>
       </div>
 
-      <p id="citationText"><em>Sahu, V. (2025). Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215</em></p>
+      <p id="citationText"><em>Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17236600</em></p>
       
       <!-- Download citation buttons -->
       <div class="citation-download">
@@ -954,12 +954,12 @@
 
   // Citation logic
   const citations = {
-    apa: "Sahu, V. (2025). Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
-    vancouver: "Sahu V. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17065215",
-    chicago: "Sahu, V. 2025. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.17065215",
-    harvard: "Sahu, V., 2025. Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0). Zenodo. Available at: https://doi.org/10.5281/zenodo.17065215",
-    mla: "Sahu, Vihaan. \"Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17065215.",
-    ieee: "V. Sahu, \"Critiplot: Visualization Tool for Risk of Bias Assessments (v1.0.0),\" Zenodo, 2025. doi: 10.5281/zenodo.17065215."
+    apa: "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17236600",
+    chicago: "Sahu, V. 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    harvard: "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
+    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
+    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.0.1),\" Zenodo, 2025. doi: 10.5281/zenodo.17236600."
   };
 
   const citationSelect = document.getElementById("citationType");
@@ -983,10 +983,10 @@
     
     if (format === 'ris') {
       content = `TY  - COMP
-T1  - Critiplot: Visualization Tool for Risk of Bias Assessments
+T1  - Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses
 A1  - Sahu, Vihaan
 Y1  - 2025
-DO  - https://doi.org/10.5281/zenodo.17065215
+DO  - https://doi.org/10.5281/zenodo.17236600
 PB  - Zenodo
 PY  - 2025
 ER  - `;
@@ -994,12 +994,12 @@ ER  - `;
     } else if (format === 'bibtex') {
       content = `@software{critiplot,
   author = {Sahu, Vihaan},
-  title = {{Critiplot: Visualization Tool for Risk of Bias Assessments}},
+  title = {{Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses}},
   year = {2025},
-  version = {v1.0.0},
+  version = {v1.0.1},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.17065215},
-  url = {https://doi.org/10.5281/zenodo.17065215}
+  doi = {10.5281/zenodo.17236600},
+  url = {https://doi.org/10.5281/zenodo.17236600}
 }`;
       filename += ".bib";
     }

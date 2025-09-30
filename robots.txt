@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nos-plot.vercel.app/sitemap.xml
+Sitemap: https://critiplot.vercel.app/sitemap.xml
