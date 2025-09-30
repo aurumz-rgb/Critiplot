@@ -1,4 +1,4 @@
-# Front-end for the Critiplot.
+# Front-end for the Critiplot
 
 ---
 
