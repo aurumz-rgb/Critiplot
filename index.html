@@ -122,69 +122,15 @@
 
 <body>
 
-<!-- Firebase Visitor Logging Script -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
-  import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
-
-  // Firebase config
-  const firebaseConfig = {
-    apiKey: "AIzaSyA1L10IRuyR9hQaHUb_KNrQQEJkLcL7qEk",
-    authDomain: "nos-tlplot-stats.firebaseapp.com",
-    projectId: "nos-tlplot-stats",
-    storageBucket: "nos-tlplot-stats.firebasestorage.app",
-    messagingSenderId: "384068378525",
-    appId: "1:384068378525:web:f5ae43ea436483d56ed974",
-    measurementId: "G-QRNJRME77M"
-  };
-
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  const db = getFirestore(app);
-  const auth = getAuth();
-
-  
-  async function logVisitor() {
-    try {
-      
-      const res = await fetch("https://api.ipify.org?format=json");
-      const ip = (await res.json()).ip;
-
-     
-      const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
-      const geoData = await geoRes.json();
-      const country = geoData.country_name || "Unknown";
-
-      const ua = navigator.userAgent;
-
-      await addDoc(collection(db, "logs"), {
-        ip: ip,
-        country: country,
-        userAgent: ua,
-        timestamp: Date.now()
-      });
-
-      console.log("Visitor logged:", { ip, country, ua });
-
-    } catch (err) {
-      console.error("Visitor logging failed:", err);
-    }
-  }
-
-
-  signInAnonymously(auth)
-    .then(() => {
-      console.log("Anonymous user signed in");
-      logVisitor(); 
-    })
-    .catch((error) => {
-      console.error("Anonymous auth failed:", error);
-    });
-
+<!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRNJRME77M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QRNJRME77M');
 </script>
+
 
   <style>
     body {
