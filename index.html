@@ -925,48 +925,44 @@
       <p>For GRADE assessments, your uploaded table should follow this structure:</p>
       <ul>
         <li><strong>Outcome:</strong> Name of the outcome</li>
-        <li><strong>Study:</strong> Study identifier</li>
-        <li><strong>Risk of Bias:</strong> Risk of bias judgement (High, Moderate, Low, Very Low, None)</li>
-        <li><strong>Inconsistency:</strong> Inconsistency judgement (High, Moderate, Low, Very Low, None)</li>
-        <li><strong>Indirectness:</strong> Indirectness judgement (High, Moderate, Low, Very Low, None)</li>
-        <li><strong>Imprecision:</strong> Imprecision judgement (High, Moderate, Low, Very Low, None)</li>
-        <li><strong>Publication Bias:</strong> Publication bias judgement (High, Moderate, Low, Very Low, None)</li>
-        <li><strong>Overall Certainty:</strong> Overall certainty judgement (High, Moderate, Low, Very Low)</li>
+        <li><strong>Risk_of_Bias:</strong> Risk of bias judgement (Serious, Not Serious, Very Serious)</li>
+        <li><strong>Inconsistency:</strong> Inconsistency judgement (Serious, Not Serious, Very Serious)</li>
+        <li><strong>Indirectness:</strong> Indirectness judgement (Serious, Not Serious, Very Serious)</li>
+        <li><strong>Imprecision:</strong> Imprecision judgement (Serious, Not Serious, Very Serious)</li>
+        <li><strong>Publication_Bias:</strong> Publication bias judgement (Serious, Not Serious, Very Serious)</li>
+        <li><strong>Overall_Certainty:</strong> Overall certainty judgement (High, Moderate, Low, Very Low)</li>
       </ul>
       <div class="table-container">
         <table>
           <thead>
             <tr>
               <th>Outcome</th>
-              <th>Study</th>
-              <th>Risk of Bias</th>
+              <th>Risk_of_Bias</th>
               <th>Inconsistency</th>
               <th>Indirectness</th>
               <th>Imprecision</th>
-              <th>Publication Bias</th>
-              <th>Overall Certainty</th>
+              <th>Publication_Bias</th>
+              <th>Overall_Certainty</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Mortality</td>
-              <td>Study 1 2020</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Moderate</td>
-              <td>None</td>
+              <td>Serious</td>
+              <td>Not Serious</td>
+              <td>Not Serious</td>
+              <td>Serious</td>
+              <td>Not Serious</td>
               <td>Low</td>
             </tr>
             <tr>
               <td>Infection</td>
-              <td>Study 2 2019</td>
-              <td>Moderate</td>
+              <td>Serious</td>
+              <td>Very Serious</td>
+              <td>Not Serious</td>
+              <td>Not Serious</td>
+              <td>Not Serious</td>
               <td>High</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Moderate</td>
             </tr>
           </tbody>
         </table>
@@ -1279,7 +1275,7 @@
         </select>
         <button id="copyButton"><i class="fas fa-copy"></i> Copy</button>
       </div>
-      <p id="citationText"><em>Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2). Zenodo. https://doi.org/10.5281/zenodo.17236600</em></p>
+      <p id="citationText"><em>Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.17236600</em></p>
       <div class="citation-download">
         <button onclick="downloadCitation('ris')"><i class="fas fa-file-alt"></i> Download RIS</button>
         <button onclick="downloadCitation('bibtex')"><i class="fas fa-file-code"></i> Download BibTeX</button>
@@ -1321,12 +1317,12 @@
   nextButton.addEventListener('click', () => moveCarousel('next'));
   
   const citations = {
-    apa: "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17236600",
-    chicago: "Sahu, V. 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    harvard: "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
-    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
-    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v1.2.2),\" Zenodo, 2025. doi: 10.5281/zenodo.17236600."
+    apa: "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17236600",
+    chicago: "Sahu, V. 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.17236600",
+    harvard: "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
+    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
+    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.0.0),\" Zenodo, 2025. doi: 10.5281/zenodo.17236600."
   };
 
   const citationSelect = document.getElementById("citationType");
@@ -1370,7 +1366,7 @@ ER  - `;
   author = {Sahu, Vihaan},
   title = {{Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses}},
   year = {2025},
-  version = {v1.2.2},
+  version = {v2.0.0},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.17236600},
   url = {https://doi.org/10.5281/zenodo.17236600}
