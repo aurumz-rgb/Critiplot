@@ -383,6 +383,20 @@
       box-shadow: var(--shadow-lg);
     }
     
+    .redirect .mirror-btn {
+      background: var(--secondary-color);
+      margin-top: 0.5rem;
+    }
+    
+    .redirect .mirror-btn:hover {
+      background: #1b2631;
+    }
+    
+    .redirect .mirror-text {
+      margin-top: 3.5rem;
+      color: var(--gray-color);
+    }
+    
     .carousel {
       position: relative;
       width: 100%;
@@ -802,6 +816,8 @@
     </section>
     <section class="redirect">
       <a href="https://critiplot.streamlit.app" target="_blank"><i class="fas fa-rocket"></i> Launch Critiplot</a>
+      <p class="mirror-text">Above Streamlit web app busy? You can use the mirror:</p>
+      <a href="https://critiplot-mirror.streamlit.app" target="_blank" class="mirror-btn"><i class="fas fa-clone"></i> Launch Mirror</a>
     </section>
     <section class="table-instructions">
       <h2>Data Structure for Assessment Tools</h2>
