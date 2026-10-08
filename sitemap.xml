@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://critiplot.vercel.app/</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/assets/preview1.png</image:loc>
+      <image:title>Critiplot risk of bias traffic light plot example</image:title>
+      <image:caption>Critiplot risk of bias traffic light plot example</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/result.png</image:loc>
+      <image:title>Critiplot NOS figure</image:title>
+      <image:caption>Newcastle-Ottawa Scale (NOS) traffic light plot example</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/grade_result3.png</image:loc>
+      <image:title>Critiplot GRADE figure</image:title>
+      <image:caption>GRADE certainty of evidence summary plot</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/robis_result5.png</image:loc>
+      <image:title>Critiplot ROBIS figure</image:title>
+      <image:caption>ROBIS risk of bias in systematic reviews plot</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/case_report4.png</image:loc>
+      <image:title>Critiplot JBI case report figure</image:title>
+      <image:caption>JBI case report assessment figure</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/series_plot4.png</image:loc>
+      <image:title>Critiplot JBI case series figure</image:title>
+      <image:caption>JBI case series assessment figure</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/MMAT1.png</image:loc>
+      <image:title>Critiplot MMAT figure</image:title>
+      <image:caption>Mixed Methods Appraisal Tool (MMAT) figure</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://critiplot.vercel.app/example/Screenshot1.png</image:loc>
+      <image:title>Critiplot user interface</image:title>
+      <image:caption>Critiplot application interface</image:caption>
+    </image:image>
   </url>
 </urlset>
